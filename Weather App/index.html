@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <title>Weather Application</title>
+</head>
+
+<body>
+    <main class="container min-vh-100 wrapper">
+        <div class="container my-5">
+            <div class="searchBar animate__animated animate__shakeX">
+                <input id="enter-city" type="text" name="text" class="input" placeholder="Search city here...">
+                <button id="searchBtn" class="search__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                    <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z" fill="#efeff1"></path>
+                  </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="container animate__animated animate__bounceIn">
+            <div class="weatherDisplay p-3">
+                <h3 class="city fw-bolder"></h3>
+                <div class="date"></div>
+                <div class="temp"></div>
+                <img class="icon"/>
+                <div class="info-section">
+                    <div class="description text-capitalize"></div>
+                    <div class="humidity"></div>
+                    <div class="windspeed"></div>
+                    <div class="country"></div>
+                </div>
+            </div>
+        </div>    
+    </main>
+
+    <script src="src/app.js"></script>
+</body>
+
+</html>
